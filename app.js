@@ -64,7 +64,7 @@ const uri = process.env.MONGO_CONN_STR;
 mongoose.connect(uri,{useNewUrlParser:true,useUnifiedTopology:true}).then(()=>{console.log('mongo db connected')});
 
 
-app.get('/contact',(req,res)=>{
+app.get('/profile',(req,res)=>{
     res.render('profile');
   })
 //app.use("/contact",ProfileRouter);
